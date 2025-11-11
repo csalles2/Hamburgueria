@@ -6,35 +6,30 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
-<<<<<<< HEAD
-import Menu from "./components/Menu";
+
+
+
 import Checkout from "./pages/Checkout";
 import PedidosPreparando from "./pages/PedidosPreparando";
+import { Menu } from "lucide-react";
 
 
-
-=======
->>>>>>> 6d23d566d0395f292d198045b326b87b3e56ecda
 const queryClient = new QueryClient();
-
 const App = () => (
-  <QueryClientProvider client={queryClient}>
+
+ <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-<<<<<<< HEAD
-         <Route path="/menu" element={<Menu />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/menu" element={<Menu />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/admin/pedidospreparando" element={<PedidosPreparando />} />
           
-=======
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          {}
           <Route path="*" element={<NotFound />} />
->>>>>>> 6d23d566d0395f292d198045b326b87b3e56ecda
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
