@@ -1,14 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "@fontsource-variable/outfit";
+@import "@fontsource-variable/outfit"; 
 
 @layer base {
   :root {
-    /* ADICIONADO: Cores personalizadas para o tema claro */
-    --smash: 0 0% 90%; /* Exemplo de cor base para o fundo (claro) */
-    --smash-gold: 40 90% 60%; /* Exemplo de cor dourada para destaque */
+    /* Cores Personalizadas Smash House */
+    --smash: 0 0% 90%; /* Fundo claro (será mapeado para bg-smash) */
+    --smash-gold: 40 90% 60%; /* Dourado (será mapeado para text-smash-gold) */
     
+    /* Cores Padrão (Shadcn/UI base) */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -41,10 +42,11 @@
   }
 
   .dark {
-    /* ADICIONADO: Cores personalizadas para o tema escuro */
-    --smash: 240 10% 3.9%; /* Exemplo: Fundo escuro (pode ser o mesmo que background) */
-    --smash-gold: 40 100% 70%; /* Exemplo: Dourado mais brilhante no escuro */
+    /* Cores Personalizadas Dark Mode */
+    --smash: 240 10% 3.9%; /* Fundo escuro */
+    --smash-gold: 40 100% 70%; /* Dourado mais brilhante no escuro */
     
+    /* Cores Padrão Dark Mode */
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 
@@ -84,7 +86,6 @@
     @apply font-outfit;
   }
 
-  /* CORRIGIDO: Removido o erro de sintaxe e o uso do 'smash' */
   body {
     @apply bg-smash text-foreground; 
   }
@@ -104,9 +105,7 @@
     @apply absolute bottom-0 left-0 h-1 w-16 bg-primary;
   }
   
-  /* CORRIGIDO: 'menu-item' estava duplicado, mantive a definição */
   .menu-item {
-    /* Agora 'smash-gold' é uma cor definida */
     @apply flex flex-col md:flex-row justify-between bg-black/30 backdrop-blur-sm rounded-lg p-4 mb-4 border border-smash-gold/20 hover:border-smash-gold/40 transition-all duration-300;
   }
   
@@ -123,7 +122,6 @@
   }
   
   .menu-price {
-    /* Agora 'smash-gold' é uma cor definida */
     @apply text-smash-gold font-bold text-xl md:text-2xl;
   }
   
@@ -132,17 +130,7 @@
   }
 }
 
-@font-face {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  /* Use a importação do @fontsource ou esta, mas evite duplicidade */
-  src: url('@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2') format('woff2');
-}
-
-
-/* Adicione ao seu CSS global */
+/* Animações e Responsividade */
 .acompanhamento-container {
   animation: slideDown 0.3s ease-out;
 }
@@ -158,7 +146,6 @@
   }
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .acompanhamento-container {
     position: fixed !important;
