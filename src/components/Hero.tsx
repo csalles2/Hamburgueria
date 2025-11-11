@@ -18,15 +18,23 @@ const Hero = () => {
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center">
           <a 
+
             href="" 
+
+            href="https://wa.me/5511999999999?text=Olá%2C+quero+fazer+um+pedido+na+Smash+House+🍔" 
+
             className="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-full shadow-lg flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 text-lg"
             target="_blank"
             rel="noopener noreferrer"
           >
+
             <a href="#cardapio" style={{  }}>
              <ShoppingBag size={20} />
               
             </a>
+
+            <ShoppingBag size={20} />
+ 6d23d566d0395f292d198045b326b87b3e56ecda
             FAZER PEDIDO AGORA
           </a>
           <a 

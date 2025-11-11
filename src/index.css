@@ -127,6 +127,7 @@
   font-display: swap;
   src: url('@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2') format('woff2');
 }
+<<<<<<< HEAD
 
 /* Adicione ao seu CSS global */
 .acompanhamento-container {
@@ -154,3 +155,5 @@
     width: auto !important;
   }
 }
+=======
+>>>>>>> 6d23d566d0395f292d198045b326b87b3e56ecda

@@ -3,7 +3,11 @@ import { Clock, Box } from "lucide-react";
 
 const Hours = () => {
   return (
+
     <section id="horarios" className="py-20 bg-gradient-to-b from-black to-smash">
+
+    <section id="horario" className="py-20 bg-gradient-to-b from-black to-smash">
+
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Horário de Funcionamento</h2>
         <div className="h-1 w-20 bg-primary mx-auto mb-12"></div>
