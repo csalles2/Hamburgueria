@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ShoppingBag } from 'lucide-react'; // Importei o ícone ShoppingBag (exemplo)
+import { ShoppingBag } from 'lucide-react'; 
 
 interface MenuItem {
   id: number;
@@ -8,7 +8,7 @@ interface MenuItem {
   title: string;
   description: string;
   price: number;
-  quantity: number; // Necessário para o estado 'cart'
+  quantity: number; 
 }
 
 // ⚠️ LISTA DE ITENS CORRIGIDA E UNIFICADA
@@ -238,17 +238,7 @@ const Menu = () => {
             <p className="text-white mt-2 font-bold text-xl">Total: R$ {getTotalPrice().toFixed(2).replace('.', ',')}</p>
           )}
 
-          {/* Botão WhatsApp (externo) - Mantido, mas não recomendado junto com o Checkout interno */}
-          {/*
-          <a
-            href="https://wa.me/5511999999999?text=Olá%2C+quero+fazer+um+pedido+na+Smash+House+🍔"
-            className="bg-primary hover:bg-primary/90 text-white font-bold py-3 px-8 rounded-full shadow-lg inline-flex items-center gap-2 transition-all duration-300 hover:scale-105 text-lg mt-4 ml-4"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            FAZER PEDIDO AGORA (WhatsApp)
-          </a>
-          */}
+         
 
         </div>
       </div>

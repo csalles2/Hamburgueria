@@ -6,12 +6,12 @@
 @layer base {
   :root {
     /* Cores Personalizadas Smash House */
-    --smash: 0 0% 90%; /* Fundo claro (será mapeado para bg-smash) */
+    --smash: 0 0% 70%; /* Fundo claro (será mapeado para bg-smash) */
     --smash-gold: 40 90% 60%; /* Dourado (será mapeado para text-smash-gold) */
     
     /* Cores Padrão (Shadcn/UI base) */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 221.2 84% 4.9%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -43,7 +43,7 @@
 
   .dark {
     /* Cores Personalizadas Dark Mode */
-    --smash: 240 10% 3.9%; /* Fundo escuro */
+    --smash: 240 20% 3.9%; /* Fundo escuro */
     --smash-gold: 40 100% 70%; /* Dourado mais brilhante no escuro */
     
     /* Cores Padrão Dark Mode */
